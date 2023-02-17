@@ -20,7 +20,7 @@ metadata:
     app: aqua-scanner
     aqua.component: scanner
 spec:
-  replicas: 1
+  replicas: 3
   template:
     metadata:
       labels:
