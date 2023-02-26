@@ -20,6 +20,9 @@ spec:
       annotations:
         container.apparmor.security.beta.kubernetes.io/aqua-agent: unconfined
     spec:
+      tolerations:
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
       containers:
       - env:
         - name: AQUA_NODE_NAME
